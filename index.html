@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in Page</title>
+    <link rel="stylesheet" href="./styles.css"> 
+</head>
+<body>
+    <!--Registration Form-->
+    <form id="register-form" class="form active">
+        <p class="title">Register</p>
+        <p class="message">Sign-up now and get the full acess</p>
+        <div class="flex">
+            <label>
+                <input type="text" class="input" placeholder="" required="">
+                <span>First Name</span>
+          </label>
+      
+            <label>
+                <input type="text" class="input" placeholder="" required="">
+                <span>Last Name</span>
+          </label>
+        </div>
+        <label>
+            <input type="email" class="input" placeholder="" required="">
+            <span>Email</span>
+        </label>
+        <label>
+            <input type="password" class="input" placeholder="" required="">
+            <span>Password</span>
+        </label>
+        <label>
+            <input type="password" class="input" placeholder="" required="">
+            <span>Confirm Password</span>
+        </label>
+        
+            <button class="submit">Register</button>
+            <p class="signin-singup">
+                Already have a account?
+                <a href="" id="show-login">Login </a>
+            </p>
+        
+    </form>
+
+
+
+
+    <!--Login Form-->
+    <form id="login-form" class="form">
+        <p class="title">Login</p>
+        <p class="message">
+            Login now and get the full acess</p>
+       
+        <label>
+            <input type="email" class="input" placeholder="" required="">
+            <span>Email</span>
+        </label>
+        <label>
+            <input type="password" class="input" placeholder="" required="">
+            <span>Password</span>
+        </label>
+      
+        
+            <button class="submit">Login</button>
+            <p class="signin-singup">
+                Don't  have a account?
+                <a href="" id="show-register" >Sign-Up</a>
+            </p>
+        
+    </form>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.form{
+    display: none;
+}
+.form.active{
+    color: #ffffff;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    border: 1px solid ;
+
+}
+.title{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0px;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    color: #00bbff;
+}
+.title::before{
+    height: 18px;
+    width: 18px;
+}
+.title::after{
+    height: 18px;
+    width: 18px;
+    animation: pulse 1s linear infinite ;
+}
+@keyframes pulse{
+    from{
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to{
+        transform: scale(1.9);
+        opacity: 0;
+    }
+}
+.title::before,
+.title::after{
+    content:"";
+    height: 16px;
+    width: 16px;
+    left: 0%;
+    position: absolute;
+    background-color: #00bbff;
+    border-radius: 50%;
+}
+.message,
+.signin-singup{
+    font-size: 14.5px;
+    color: rgb(255,255,255,0.7);
+}
+.signin-singup{
+    text-align: center;
+}
+.signin-singup a{
+    color: #00bbff;
+    text-decoration: none;
+}
+.signin-singup a:hover{
+    text-decoration: underline #00bbff;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+.form label{
+    position: relative;
+}
+.form label .input{
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgb(105,105,105,0.39);
+    border-radius: 10px;
+}
+.form label .input + span{
+    color: rgb(255,255,255,0.7);
+    position: absolute;
+    left:10px;
+    top:10px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+.form label .input:placeholder-shown + span{
+    top: 12.5px;
+    font-size: 0.9em;
+}
+.form label .input:focus+span,
+.form label .input:valid+span{
+    color: #00bbff;
+    top:10px;
+    font-size: 10px;
+    font-weight: 200;
+}
+.input{
+    font-size: medium;
+}
+.submit{
+    background-color: #00bbff;
+    border: none;
+    outline: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    transform: 0.3s ease;
+}
+.submit:hover{
+    background-color: #00bbff96;
+}
+
+
+
+
